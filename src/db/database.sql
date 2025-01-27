@@ -1,0 +1,16 @@
+CREATE DATABASE IF NOT EXISTS pruebadb;
+
+USE pruebadb;
+
+CREATE TABLE usuarios(
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(50) DEFAULT NULL,
+    usuario VARCHAR(50) DEFAULT NULL,
+    clave VARCHAR(200) DEFAULT NULL,
+    telefono VARCHAR(50) DEFAULT NULL,
+    documento VARCHAR(50) DEFAULT NULL,
+    estado VARCHAR(50) DEFAULT NULL,
+    PRIMARY KEY (id)
+);
+
+DESCRIBE usuarios;
